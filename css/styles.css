@@ -173,6 +173,12 @@ select::-ms-expand {
   display: none;
 }
 
+.heading {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  font-family: "PT Serif", serif;
+}
+
 .inner {
   width: 100%;
   padding-right: 20px;
@@ -193,5 +199,92 @@ select::-ms-expand {
   font-size: 1.25rem;
   background-color: #111;
   color: #fff;
+}
+
+.about {
+  background-color: #F0F0EC;
+  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
+}
+
+.about__inner {
+  padding-top: 21px;
+  padding-top: 1.3125rem;
+}
+
+.about__heading {
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 34px;
+  margin-bottom: 2.125rem;
+}
+
+.about__img {
+  width: 98px;
+  width: 6.125rem;
+  height: 96px;
+  height: 6rem;
+}
+.about__img img {
+  border-radius: 50%;
+}
+
+.about__lead {
+  margin-left: 25px;
+  margin-left: 1.5625rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+.about__text {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.6666666667;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__inner {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+}
+
+.header__logo {
+  font-family: "PT Serif", serif;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  color: #fff;
+  letter-spacing: 1.6px;
+  letter-spacing: 0.1rem;
+}
+
+.main-visual__img {
+  position: relative;
+}
+.main-visual__img:before {
+  content: "";
+  background: url(../../images/Sa.svg);
+  width: 262px;
+  width: 16.375rem;
+  height: 240px;
+  height: 15rem;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  bottom: -1.5625rem;
 }
 /*# sourceMappingURL=styles.css.map */

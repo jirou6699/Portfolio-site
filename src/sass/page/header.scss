@@ -1,0 +1,34 @@
+@use "global" as *;
+
+// header
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.header__inner {
+	padding-top: rem(20);
+}
+
+.header__logo {
+	font-family: $second-font-family;
+	font-size: rem(25);
+	color: $white;
+	letter-spacing: rem(1.6);
+}
+
+// main-visual
+.main-visual__img {
+	position: relative;
+	&:before {
+		content: "";
+		background: url(../../images/Sa.svg);
+		width: rem(262);
+		height: rem(240);
+		position: absolute;
+		right: 0;
+		bottom: rem(-25);
+	}
+}

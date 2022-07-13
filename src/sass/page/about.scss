@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.about {
+	background-color: $baseGray;
+	padding-bottom: rem(50);
+}
+
+.about__inner {
+	padding-top: rem(21);
+}
+
+.about__heading {
+	margin-bottom: rem(10);
+}
+
+.about__content {
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(34);
+}
+
+.about__img {
+	width: rem(98);
+	height: rem(96);
+	& img {
+		border-radius: 50%;
+	}
+}
+
+.about__lead {
+	margin-left: rem(25);
+	font-size: rem(13);
+}
+
+.about__text {
+	font-size: rem(12);
+	line-height: (20 / 12);
+}
