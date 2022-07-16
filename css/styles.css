@@ -294,6 +294,117 @@ select::-ms-expand {
   bottom: -1.5625rem;
 }
 
+.drawer {
+  position: fixed;
+  top: 28px;
+  top: 1.75rem;
+  right: 20px;
+  right: 1.25rem;
+  width: 25px;
+  width: 1.5625rem;
+  height: 21px;
+  height: 1.3125rem;
+  z-index: 100;
+}
+
+.drawer__icon {
+  position: relative;
+  top: 0px;
+  top: 0rem;
+  width: 25px;
+  width: 1.5625rem;
+  height: 21px;
+  height: 1.3125rem;
+}
+.drawer__icon.is-active {
+  top: 7px;
+  top: 0.4375rem;
+}
+.drawer__icon.is-active .drawer__bar1 {
+  top: 0px;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.drawer__icon.is-active .drawer__bar2 {
+  display: none;
+}
+.drawer__icon.is-active .drawer__bar3 {
+  top: 0px;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.drawer__bar1,
+.drawer__bar2,
+.drawer__bar3 {
+  position: absolute;
+  width: 25px;
+  width: 1.5625rem;
+  height: 3px;
+  height: 0.1875rem;
+  background: #fff;
+  border-radius: 1.25rem;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.drawer__bar1 {
+  top: 0;
+}
+
+.drawer__bar2 {
+  top: 9px;
+  top: 0.5625rem;
+}
+
+.drawer__bar3 {
+  top: 18px;
+  top: 1.125rem;
+}
+
+.drawer-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(51, 51, 51);
+  z-index: 20;
+  display: none;
+}
+
+.drawer-content__items {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.drawer-content__item {
+  width: 200px;
+  width: 12.5rem;
+}
+.drawer-content__item a {
+  padding: 16px;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  position: relative;
+}
+
 .images {
   font-size: 0;
 }

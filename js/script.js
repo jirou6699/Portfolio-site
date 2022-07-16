@@ -19,32 +19,36 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   topBtn.click(function () {
     $('body,html').animate({
       scrollTop: 0
-    }, 300, 'swing');
+    }, 500, 'swing');
     return false;
   });
 
   //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
-
-  });
+	$('#js-drawer').on('click', function (e) {
+		e.preventDefault();
+		$('.drawer__icon').toggleClass('is-active');
+		$('.drawer-content').fadeToggle();
+		return false;
+	});
 
 
+	// ドロワークリックするときえる
+	var clickItem = $(".drawer-content .drawer-content__items .drawer-content__item a ");
+	clickItem.on("click", function () {
+		$('.drawer__icon').toggleClass('is-active');
+		$('.drawer-content').fadeToggle();
+		return false;
+	});
 
-  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-
-  $(document).on('click', 'a[href*="#"]', function () {
-    let time = 400;
-    let header = $('header').innerHeight();
-    let target = $(this.hash);
-    if (!target.length) return;
-    let targetY = target.offset().top - header;
-    $('html,body').animate({ scrollTop: targetY }, time, 'swing');
-    return false;
-  });
-
+	// スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
+	$('a[href^="#"]').click(function () {
+		var href = $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var position = target.offset().top;
+		var speed = 500;
+		$("html, body").animate({
+			scrollTop: position
+		}, speed, "swing");
+		return false;
+	});
 });
