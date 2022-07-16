@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.learning {
+	background-color: $darkGray;
+}
+
+.learning__inner {
+	padding-top: rem(44);
+	padding-bottom: rem(23);
+}
+
+.learning__heading {
+	margin-bottom: rem(47);
+}
+
+.learning__subHead, .learning__text {
+	font-size: rem(12);
+	font-weight: 300;
+}
+
+.learning__subHead {
+	margin-bottom: rem(22);
+}
+
+.learning__text {
+	line-height: (20 / 12);
+	margin-bottom: rem(20);
+}

@@ -1,0 +1,59 @@
+@use "global" as *;
+
+.portFolio {
+	background-color: $baseGray;
+}
+
+.portFolio__inner {
+	padding-top: rem(47);
+	padding-bottom: rem(25);
+}
+
+.portFolio__heading {
+	letter-spacing: rem(1);
+	margin-bottom: rem(20);
+}
+
+.portFolio__items {
+
+}
+
+.portFolio__item {
+margin-bottom: rem(21);
+}
+
+.portFolio__img {
+	margin-bottom: rem(15);
+
+	@include mq("md") {
+		margin-bottom: 0;
+	}
+}
+
+.portFolio__title {
+	font-size: rem(14);
+	margin-bottom: rem(2);
+}
+
+
+.portFolio__body {
+	font-size: rem(12);
+}
+
+.portFolio__access {
+	margin-bottom: rem(2);
+}
+
+.portFolio__id {
+	margin-bottom: rem(2);
+
+}
+
+.portFolio__gitAccess {
+	margin-bottom: rem(22);
+
+}
+
+.portFolio__text {
+	line-height: 1.63;
+}

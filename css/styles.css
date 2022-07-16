@@ -201,10 +201,15 @@ select::-ms-expand {
   color: #fff;
 }
 
+.mb-20 {
+  margin-bottom: 20px !important;
+  margin-bottom: 1.25rem !important;
+}
+
 .about {
   background-color: #F0F0EC;
-  padding-bottom: 50px;
-  padding-bottom: 3.125rem;
+  padding-bottom: 44px;
+  padding-bottom: 2.75rem;
 }
 
 .about__inner {
@@ -256,6 +261,7 @@ select::-ms-expand {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 .header__inner {
@@ -286,5 +292,111 @@ select::-ms-expand {
   right: 0;
   bottom: -25px;
   bottom: -1.5625rem;
+}
+
+.images {
+  font-size: 0;
+}
+
+.images__left, .images__right {
+  display: inline-block;
+  width: 50%;
+}
+
+.learning {
+  background-color: #E3E3E3;
+}
+
+.learning__inner {
+  padding-top: 44px;
+  padding-top: 2.75rem;
+  padding-bottom: 23px;
+  padding-bottom: 1.4375rem;
+}
+
+.learning__heading {
+  margin-bottom: 47px;
+  margin-bottom: 2.9375rem;
+}
+
+.learning__subHead, .learning__text {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.learning__subHead {
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+.learning__text {
+  line-height: 1.6666666667;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.portFolio {
+  background-color: #F0F0EC;
+}
+
+.portFolio__inner {
+  padding-top: 47px;
+  padding-top: 2.9375rem;
+  padding-bottom: 25px;
+  padding-bottom: 1.5625rem;
+}
+
+.portFolio__heading {
+  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.portFolio__item {
+  margin-bottom: 21px;
+  margin-bottom: 1.3125rem;
+}
+
+.portFolio__img {
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .portFolio__img {
+    margin-bottom: 0;
+  }
+}
+
+.portFolio__title {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 2px;
+  margin-bottom: 0.125rem;
+}
+
+.portFolio__body {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.portFolio__access {
+  margin-bottom: 2px;
+  margin-bottom: 0.125rem;
+}
+
+.portFolio__id {
+  margin-bottom: 2px;
+  margin-bottom: 0.125rem;
+}
+
+.portFolio__gitAccess {
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+.portFolio__text {
+  line-height: 1.63;
 }
 /*# sourceMappingURL=styles.css.map */
