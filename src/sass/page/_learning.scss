@@ -2,27 +2,107 @@
 
 .learning {
 	background-color: $darkGray;
+
+	@include mq("md") {
+		padding-top: rem(38);
+		padding-bottom: rem(88);
+	}
+}
+
+// inline-blockにしたので親要素に隙間ができないように調整
+// 参考:https://haniwaman.com/inline-block-space/
+.learning__images {
+	font-size: 0;
+
+	@include mq("md") {
+		width: rem(980);
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: rem(-76);
+		margin-bottom: rem(42.4);
+	}
+}
+
+.learning__center {
+	@include mq("md") {
+		height: rem(333);
+		margin-bottom: rem(41);
+	}
+}
+
+.learning__middle {
+	display: flex;
+	@include mq("md") {
+		justify-content: end;
+	}
+}
+
+.learning__bottom {
+	@include mq("md") {
+		display: flex;
+		position: absolute;
+		bottom: rem(-192);
+	}
+}
+
+.learning__left {
+	@include mq("md") {
+		width: rem(254);
+		height: rem(149);
+	}
+}
+
+.learning__right {
+	@include mq("md") {
+		width: rem(246);
+		height: rem(149);
+		margin-left: rem(40);
+	}
 }
 
 .learning__inner {
 	padding-top: rem(44);
 	padding-bottom: rem(23);
+
+	@include mq("md") {
+		position: relative;
+	}
 }
 
 .learning__heading {
 	margin-bottom: rem(47);
+
+	@include mq("md") {
+		letter-spacing: rem(-1.7);
+		margin-bottom: rem(37);
+	}
 }
 
-.learning__subHead, .learning__text {
+.learning__subHead,
+.learning__text {
 	font-size: rem(12);
 	font-weight: 300;
+	font-family: $second-font-family;
+
+	@include mq("md") {
+		font-size: rem(14);
+	}
 }
 
 .learning__subHead {
 	margin-bottom: rem(22);
+
+	@include mq("md") {
+		margin-bottom: rem(26);
+	}
 }
 
 .learning__text {
 	line-height: (20 / 12);
 	margin-bottom: rem(20);
+
+	@include mq("md") {
+		margin-bottom: rem(27);
+		line-height: (24 / 14);
+	}
 }

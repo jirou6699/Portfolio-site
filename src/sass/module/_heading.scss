@@ -4,4 +4,9 @@
 .heading {
 	font-size: rem(21);
 	font-family: $second-font-family;
+
+	@include mq("md") {
+		font-size: rem(35);
+		font-weight: 400;
+	}
 }

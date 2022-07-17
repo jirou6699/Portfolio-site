@@ -2,24 +2,39 @@
 
 .portFolio {
 	background-color: $baseGray;
+	@include mq("md") {
+		padding-bottom: rem(141);
+	}
 }
 
 .portFolio__inner {
 	padding-top: rem(47);
 	padding-bottom: rem(25);
+
+	@include mq("md") {
+		padding-top: rem(200);
+	}
 }
 
 .portFolio__heading {
 	letter-spacing: rem(1);
 	margin-bottom: rem(20);
+
+	@include mq("md") {
+		letter-spacing: rem(1.7);
+		margin-bottom: rem(25);
+	}
 }
 
 .portFolio__items {
-
 }
 
 .portFolio__item {
-margin-bottom: rem(21);
+	margin-bottom: rem(21);
+	@include mq("md") {
+		display: flex;
+		margin-bottom: rem(30);
+	}
 }
 
 .portFolio__img {
@@ -27,17 +42,34 @@ margin-bottom: rem(21);
 
 	@include mq("md") {
 		margin-bottom: 0;
+		width: rem(435);
+		height: rem(199);
+		padding-top: rem(7);
+	}
+}
+
+.portFolio__content {
+	@include mq("md") {
+		width: rem(470);
+		margin-left: rem(69);
 	}
 }
 
 .portFolio__title {
 	font-size: rem(14);
 	margin-bottom: rem(2);
-}
 
+	@include mq("md") {
+		margin-bottom: rem(23);
+		font-size: rem(14);
+	}
+}
 
 .portFolio__body {
 	font-size: rem(12);
+	@include mq("md") {
+		font-size: rem(14);
+	}
 }
 
 .portFolio__access {
@@ -46,12 +78,10 @@ margin-bottom: rem(21);
 
 .portFolio__id {
 	margin-bottom: rem(2);
-
 }
 
 .portFolio__gitAccess {
 	margin-bottom: rem(22);
-
 }
 
 .portFolio__text {

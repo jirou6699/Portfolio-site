@@ -1,16 +1,2 @@
 @use "global" as *;
 
-// inline-blockにしたので親要素に隙間ができないように調整
-// 参考:https://haniwaman.com/inline-block-space/
-.images {
-	font-size: 0;
-}
-
-.images__center {
-
-}
-
-.images__left, .images__right{
-	display: inline-block;
-	width: 50%;
-}

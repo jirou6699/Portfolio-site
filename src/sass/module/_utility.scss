@@ -1,5 +1,28 @@
 @use "global" as *;
 
+.pt-1 {
+	@include mq("md") {
+		padding-top: rem(1) !important;
+	}
+}
+.pt-7 {
+	@include mq("md") {
+		padding-top: rem(7) !important;
+	}
+}
+
+.pt-10 {
+	@include mq("md") {
+		padding-top: rem(10) !important;
+	}
+}
+
+.pt-31 {
+	@include mq("md") {
+		padding-top: rem(31) !important;
+	}
+}
+
 .mb-20 {
 	margin-bottom: rem(20) !important;
 }
