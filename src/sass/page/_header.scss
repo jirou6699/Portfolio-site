@@ -10,6 +10,12 @@
 
 .header__inner {
 	padding-top: rem(20);
+	padding-left: rem(20);
+
+	@include mq("md") {
+		padding-left: rem(50);
+		padding-top: rem(25);
+	}
 }
 
 .header__logo {
@@ -17,18 +23,56 @@
 	font-size: rem(25);
 	color: $white;
 	letter-spacing: rem(1.6);
+
+	@include mq("md") {
+		font-size: rem(50);
+		letter-spacing: rem(3);
+	}
+}
+
+// ヘッダーナビ(pc表示のみ)
+.header__nav {
+		padding-left: rem(50);
+		margin-top: rem(-4);
+}
+
+.header__items {
+	display: flex;
+}
+
+.header__item {
+	margin-right: rem(20);
+	& a {
+		font-size: rem(20);
+		color: $white;
+		letter-spacing: rem(0.4);
+	}
+}
+
+.main-visual {
+	overflow: hidden;
 }
 
 .main-visual__img {
 	position: relative;
 	&:before {
 		content: "";
-		background: url(../../images/Sa.svg);
-		width: rem(262);
+		background: url(../../images/Sa.svg) no-repeat;
+		background-size: contain;
+		width: rem(305);
 		height: rem(240);
 		position: absolute;
-		right: 0;
-		bottom: rem(-25);
+		right: rem(-44);
+		bottom: rem(-27);
+
+		@include mq("md") {
+			background: url(../../images/Sa-pc.svg) no-repeat;
+			background-size: contain;
+			width: rem(460);
+			height: rem(358);
+			bottom: rem(-62);
+			right: rem(-51);
+		}
 	}
 }
 

@@ -29,10 +29,10 @@ html {
 }
 @media screen and (min-width: 768px) {
   html {
-    font-size: 1.4545454545vw;
+    font-size: 1.6477857878vw;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 971px) {
   html {
     font-size: 16px;
   }
@@ -188,7 +188,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .inner {
-    max-width: 1150px;
+    max-width: 1021px;
     padding-right: 25px;
     padding-left: 25px;
   }
@@ -267,6 +267,14 @@ select::-ms-expand {
 .header__inner {
   padding-top: 20px;
   padding-top: 1.25rem;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .header__inner {
+    padding-left: 3.125rem;
+    padding-top: 1.5625rem;
+  }
 }
 
 .header__logo {
@@ -277,21 +285,68 @@ select::-ms-expand {
   letter-spacing: 1.6px;
   letter-spacing: 0.1rem;
 }
+@media screen and (min-width: 768px) {
+  .header__logo {
+    font-size: 3.125rem;
+    letter-spacing: 0.1875rem;
+  }
+}
+
+.header__nav {
+  padding-left: 50px;
+  padding-left: 3.125rem;
+  margin-top: -4px;
+  margin-top: -0.25rem;
+}
+
+.header__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__item {
+  margin-right: 20px;
+  margin-right: 1.25rem;
+}
+.header__item a {
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #fff;
+  letter-spacing: 0.4px;
+  letter-spacing: 0.025rem;
+}
+
+.main-visual {
+  overflow: hidden;
+}
 
 .main-visual__img {
   position: relative;
 }
 .main-visual__img:before {
   content: "";
-  background: url(../../images/Sa.svg);
-  width: 262px;
-  width: 16.375rem;
+  background: url(../../images/Sa.svg) no-repeat;
+  background-size: contain;
+  width: 305px;
+  width: 19.0625rem;
   height: 240px;
   height: 15rem;
   position: absolute;
-  right: 0;
-  bottom: -25px;
-  bottom: -1.5625rem;
+  right: -44px;
+  right: -2.75rem;
+  bottom: -27px;
+  bottom: -1.6875rem;
+}
+@media screen and (min-width: 768px) {
+  .main-visual__img:before {
+    background: url(../../images/Sa-pc.svg) no-repeat;
+    background-size: contain;
+    width: 28.75rem;
+    height: 22.375rem;
+    bottom: -3.875rem;
+    right: -3.1875rem;
+  }
 }
 
 .drawer {
